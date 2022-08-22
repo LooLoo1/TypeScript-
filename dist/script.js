@@ -1,6 +1,5 @@
-var popularTags = ["dragon", "fenix"];
-var dragonsTag = "dragon";
-var userName = "Vitalik";
-var pageName = "1";
-var errorMessage = null;
-var someProp;
+var a1 = '1';
+var a2 = a1;
+var b1 = 10;
+var pageNumber = '1';
+var numericPageNumber = pageNumber;

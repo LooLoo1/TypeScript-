@@ -1,21 +1,7 @@
-type ID = string;
-type PopularTag = string;
-type MaybePopularTag = string | null;
+let a1:any = '1'
+let a2:number = a1 as number;
 
-interface UserInterface{
-	id: ID;
-	name: string;
-	surname: string | null;
-}
+let b1: unknown = 10;
 
-const popularTags: PopularTag[] = ["dragon", "fenix"];
-
-const dragonsTag: MaybePopularTag = "dragon";
-
-let userName: string = "Vitalik";
-
-let pageName: string | number = "1";
-
-let errorMessage: string | null = null;
-
-let someProp: string | number | null | undefined | string[] | object;
+let pageNumber: string = '1'
+let numericPageNumber: number = (pageNumber as unknown) as number 
