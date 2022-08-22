@@ -1,15 +1,21 @@
-class User {
-	firstName: string; 
-	lastName: string;
-	constructor(firstName: string, lastName: string) {
-		this.firstName = firstName;
-		this.lastName =lastName;
-	}
+type ID = string;
+type PopularTag = string;
+type MaybePopularTag = string | null;
 
-	getFullname(): string{
-		return this.firstName + " " + this.lastName;
-	} 
+interface UserInterface{
+	id: ID;
+	name: string;
+	surname: string | null;
 }
 
-const user = new User("Vitaliy","Petriv")
-console.log(user.getFullname());
+const popularTags: PopularTag[] = ["dragon", "fenix"];
+
+const dragonsTag: MaybePopularTag = "dragon";
+
+let userName: string = "Vitalik";
+
+let pageName: string | number = "1";
+
+let errorMessage: string | null = null;
+
+let someProp: string | number | null | undefined | string[] | object;
