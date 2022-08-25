@@ -3,9 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const RobotstxtPlugin = require("robotstxt-webpack-plugin");
 
 module.exports = {
-    // mode: 'development',
+    mode: 'development',
     entry: './src/main.tsx',
-    // devtool: 'inline-source-map',
+    devtool: 'inline-source-map',
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.js',
@@ -15,14 +15,6 @@ module.exports = {
         static: './dist',
         port: 8080,
         historyApiFallback: true,
-        proxy: {
-            "/api/**": {
-                target: "http://localhost",
-                secure: false,
-                changeOrigin: true,
-                loglevel: 'debug'
-            }
-        }
     },
     module: {
         rules: [

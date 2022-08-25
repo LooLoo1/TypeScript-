@@ -3,25 +3,27 @@
     "target": "ES5",
 	 "module": "ESNext",
 	 "moduleResolution": "node",
-    "lib": [
-      "DOM",
-      // "dom.iterable",
-      "ESNext"
-    ],
+	 "outDir": "./dist",
+	 "sourceMap": true,
+   //  "lib": [
+   //    "DOM",
+   //    // "dom.iterable",
+   //    "ESNext"
+   //  ],
    //  "allowJs": true,
-	"jsx": "react-jsx",
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
+	"jsx": "react",
+   //  "skipLibCheck": true,
+   //  "esModuleInterop": true,
+   //  "allowSyntheticDefaultImports": true,
+   //  "strict": true,
+   //  "forceConsistentCasingInFileNames": true,
+   //  "noFallthroughCasesInSwitch": true,
+   //  "resolveJsonModule": true,
+   //  "isolatedModules": true,
+   //  "noEmit": true
   },
-  "include": [
-   //  "./src"
-    "src/**/*"
-  ]
+//   "include": [
+//    //  "./src"
+//     "src/**/*"
+//   ]
 }
