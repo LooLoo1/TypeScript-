@@ -1,17 +1,18 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-	 "module": "ESNext",
+    "target": "es5",
+	 "module": "es2020",
 	 "moduleResolution": "node",
-	 "outDir": "./dist",
+	 "outDir": "./dist/",
 	 "sourceMap": true,
    //  "lib": [
    //    "DOM",
    //    // "dom.iterable",
    //    "ESNext"
    //  ],
-   //  "allowJs": true,
+    "allowJs": true,
 	"jsx": "react",
+	"noImplicitAny": true,
    //  "skipLibCheck": true,
    //  "esModuleInterop": true,
    //  "allowSyntheticDefaultImports": true,
@@ -22,8 +23,8 @@
    //  "isolatedModules": true,
    //  "noEmit": true
   },
-//   "include": [
-//    //  "./src"
+  "include": [
+    "src"
 //     "src/**/*"
-//   ]
+  ]
 }
