@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const RobotstxtPlugin = require("robotstxt-webpack-plugin");
 
 module.exports = {
-   //  mode: 'development',
+    mode: 'development',
     entry: './src/main.tsx',
     devtool: 'inline-source-map',
     output: {
@@ -11,11 +11,11 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/'
     },
-    devServer: {
-        static: './dist',
-        port: 8080,
-        historyApiFallback: true,
-    },
+   //  devServer: {
+   //      static: './dist',
+   //      port: 8080,
+   //      historyApiFallback: true,
+   //  },
     module: {
         rules: [
             {
