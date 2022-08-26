@@ -28,11 +28,11 @@ module.exports = {
                 use: 'ts-loader',
                 exclude: /node_modules/,
             },
-            // {
-            //     test: /\.css?$/,
-            //     use: ['style-loader', 'css-loader', 'postcss-loader'],
-            //     exclude: /node_modules/,
-            // },
+            {
+                test: /\.css?$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader'],
+                exclude: /node_modules/,
+            },
             // {
             //     test: /\.(png|jpg|gif)$/i,
             //     loader: 'file-loader',
