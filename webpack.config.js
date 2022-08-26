@@ -16,6 +16,10 @@ module.exports = {
    //      port: 8080,
    //      historyApiFallback: true,
    //  },
+	// devServer: {
+   //    contentBase: path.join(__dirname, "/dist"),
+   //    historyApiFallback:true
+   //  },
     module: {
         rules: [
             {
@@ -60,3 +64,15 @@ module.exports = {
 
 	 
 }
+
+const productionConfig = merge([
+	{
+	  output: {
+
+ 
+		 // Tweak this to match your GitHub project name
+		 publicPath: "/TypeScript-/",
+ 
+	  },
+	},
+ ]);
