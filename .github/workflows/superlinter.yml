@@ -12,13 +12,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16.x"
-
-      - uses: oleksiyrudenko/gha-git-credentials@v2.1
-        with:
-          global: true
-          name: "Vitaliy Petriv"
-          email: "vamnir132132@gmail.com"
-
+      - run: git config --global user.email "vamnir132132@gmail.com"
+      - run: git config --global user.name "Vitaliy Petriv"
       - name: Install
         run: |
           npm ci
