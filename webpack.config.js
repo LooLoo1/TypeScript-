@@ -9,7 +9,8 @@ module.exports = {
     output: {
         path: path.join(__dirname, '/dist'),
         filename: 'bundle.js',
-        publicPath: '/'
+        publicPath: '',
+		  clean: true
     },
    //  devServer: {
    //      static: './dist',
@@ -65,16 +66,3 @@ module.exports = {
 	 
 }
 
-const productionConfig = merge([
-	{
-	  output: {
- 
-		 publicPath: "/",
- 
- 
-		 // Tweak this to match your GitHub project name
-		//  publicPath: "/webpack-demo/",
- 
-	  },
-	},
-]);
