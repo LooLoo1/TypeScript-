@@ -13,6 +13,12 @@ jobs:
         with:
           node-version: "16.x"
 
+      - uses: oleksiyrudenko/gha-git-credentials@v2.1
+        with:
+          global: true
+          name: "Vitaliy Petriv"
+          email: "vamnir132132@gmail.com"
+
       - name: Install
         run: |
           npm ci
